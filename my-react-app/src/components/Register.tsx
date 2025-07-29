@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { registerUser } from '../redux/userSlice';
+import { register } from '../redux/userSlice';
 import { TextField, Button, Container, Typography } from '@mui/material';
 
 const Register: React.FC = () => {
@@ -11,7 +11,7 @@ const Register: React.FC = () => {
 
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
-        dispatch(registerUser({ username, email, password }));
+        dispatch(register({ username, email, id: email })); // Dummy user object for demo
     };
 
     return (
@@ -50,5 +50,36 @@ const Register: React.FC = () => {
         </Container>
     );
 };
+
+// Mathematical operations utility
+export function add(a: number, b: number): number {
+    return a + b;
+}
+
+export function subtract(a: number, b: number): number {
+    return a - b;
+}
+
+export function multiply(a: number, b: number): number {
+    return a * b;
+}
+
+export function divide(a: number, b: number): number {
+    if (b === 0) throw new Error('Division by zero');
+    return a / b;
+}
+
+export function modulus(a: number, b: number): number {
+    return a % b;
+}
+
+export function power(a: number, b: number): number {
+    return Math.pow(a, b);
+}
+
+export function sqrt(a: number): number {
+    if (a < 0) throw new Error('Square root of negative number');
+    return Math.sqrt(a);
+}
 
 export default Register;

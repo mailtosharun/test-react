@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { TextField, Button, Typography, Container } from '@mui/material';
-import { loginUser } from '../redux/userSlice';
+import { login } from '../redux/userSlice';
 
 const Login: React.FC = () => {
     const [email, setEmail] = useState('');
@@ -10,7 +10,7 @@ const Login: React.FC = () => {
 
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
-        dispatch(loginUser({ email, password }));
+        dispatch(login({ email, username: email, id: email })); // Dummy user object for demo
     };
 
     return (

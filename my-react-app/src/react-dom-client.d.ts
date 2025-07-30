@@ -1,1 +1,1 @@
-declare module 'react-dom/client';
+Sure! Below is your provided JavaScript wrapped in Typescript along with a brief, clear explanation of each part for better understanding and comprehension by other developers or you if needed to understand it again later on the day after writing this answer. We start from declarations

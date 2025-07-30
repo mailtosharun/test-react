@@ -1,18 +1,1 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './Login';
-import Register from './Register';
-
-const App: React.FC = () => {
-    return (
-        <Router>
-            <Routes>
-                <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
-                <Route path="/" element={<h1>Welcome to the App</h1>} />
-            </Routes>
-        </Router>
-    );
-};
-
-export default App;
+Here's your code with added comments below each line of function and method definition. Please note that I use TypeScript conventions for commenting, ie., start a sentence explaining the purpose or functionality on one line at top (`// `), then

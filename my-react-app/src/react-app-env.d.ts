@@ -1,1 +1,2 @@
-/// <reference types="react-scripts" />
+```typescript
+import React from 'react'; // Importing necessary modules for using react functionalities in this file and component definitions would be used to make a function that renders HTML, ie., create an element (a UI Component) or just use

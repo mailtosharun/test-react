@@ -52,31 +52,40 @@ const Register: React.FC = () => {
 };
 
 // Mathematical operations utility
+/**
+Adds two numbers together and returns their sum.
+*/
 export function add(a: number, b: number): number {
     return a + b;
 }
 
+/** Subtracts one number from another, returning the result of the operation. */
 export function subtract(a: number, b: number): number {
     return a - b;
 }
 
+/** Multiplies two numbers together and returns the result. */
 export function multiply(a: number, b: number): number {
     return a * b;
 }
 
+/** Performs integer division on two numbers, throwing an error if the second operand is zero. */
 export function divide(a: number, b: number): number {
     if (b === 0) throw new Error('Division by zero');
     return a / b;
 }
 
+/** Calculates the remainder of dividing one number by another. */
 export function modulus(a: number, b: number): number {
     return a % b;
 }
 
+/** Calculates the value of 'a' raised to the power of 'b'. */
 export function power(a: number, b: number): number {
     return Math.pow(a, b);
 }
 
+/** Calculates the square root of a given number, throwing an error if the input is negative. */
 export function sqrt(a: number): number {
     if (a < 0) throw new Error('Square root of negative number');
     return Math.sqrt(a);
